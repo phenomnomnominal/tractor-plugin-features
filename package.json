@@ -58,7 +58,7 @@
     "dedent": "^0.7.0",
     "esprima": "^4.0.0",
     "estemplate": "^0.5.1",
-    "gherkin": "2.12.2",
+    "gherkin": "4.1.3",
     "lodash.escaperegexp": "^4.1.2",
     "stripcolorcodes": "^0.1.0",
     "tractor-error-handler": "^0.2.0",
