@@ -1957,7 +1957,7 @@ expand-range@^1.8.1:
   dependencies:
     fill-range "^2.1.0"
 
-express@^4.14.1, express@^4.15.4:
+express@^4.15.4:
   version "4.15.4"
   resolved "https://registry.yarnpkg.com/express/-/express-4.15.4.tgz#032e2253489cf8fce02666beca3d11ed7a2daed1"
   dependencies:
@@ -4801,26 +4801,26 @@ tractor-error-handler@^0.2.0, tractor-error-handler@^0.2.1:
   dependencies:
     tractor-logger "^0.1.0"
 
-tractor-file-javascript@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/tractor-file-javascript/-/tractor-file-javascript-0.1.1.tgz#bed6d3ef10135c531a1d5dce25649aa5705fdbfd"
+tractor-file-javascript@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/tractor-file-javascript/-/tractor-file-javascript-0.2.0.tgz#0a2e91fec7cdd15b00407d9c71900c36838fd5b4"
   dependencies:
     escodegen "1.8.1"
     esprima "^4.0.0"
     esquery "^1.0.0"
     tractor-error-handler "^0.2.1"
-    tractor-file-structure "^0.2.1"
+    tractor-file-structure "^0.3.0-beta.0"
     tractor-logger "^0.1.0"
 
-tractor-file-structure@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/tractor-file-structure/-/tractor-file-structure-0.2.1.tgz#656b29a75fab687f39e0b63bce90ad9a1678a2bd"
+tractor-file-structure@^0.3.0-beta.0:
+  version "0.3.0-beta.0"
+  resolved "https://registry.yarnpkg.com/tractor-file-structure/-/tractor-file-structure-0.3.0-beta.0.tgz#d58c17150d2ae04edf5c738dd50f62ee93f34fd7"
   dependencies:
     bluebird "^3.4.7"
-    chokidar "^1.6.1"
-    express "^4.14.1"
+    chokidar "^1.7.0"
+    express "^4.15.4"
     lodash.debounce "^4.0.8"
-    tractor-error-handler "^0.2.0"
+    tractor-error-handler "^0.2.1"
     tractor-logger "^0.1.0"
 
 tractor-file-structure@^0.4.0-beta.0:
@@ -4840,16 +4840,17 @@ tractor-logger@^0.1.0:
   dependencies:
     npmlog "4.0.2"
 
-tractor-plugin-step-definitions@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/tractor-plugin-step-definitions/-/tractor-plugin-step-definitions-0.1.1.tgz#661c03a42f13543952cc885c18ce82eeb7a0404c"
+tractor-plugin-step-definitions@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/tractor-plugin-step-definitions/-/tractor-plugin-step-definitions-0.2.0.tgz#2ec366035fa4514e17efd392de9c130e8440ca37"
   dependencies:
     bluebird "^3.5.0"
     change-case "^3.0.1"
     esquery "^1.0.0"
     graceful-fs "^4.1.11"
     tractor-error-handler "^0.2.1"
-    tractor-file-javascript "^0.1.1"
+    tractor-file-javascript "^0.2.0"
+    tractor-file-structure "^0.4.0-beta.0"
     tractor-logger "^0.1.0"
 
 trim-right@^1.0.1:
@@ -5058,9 +5059,9 @@ webpack-sources@^1.0.1:
     source-list-map "^2.0.0"
     source-map "~0.5.3"
 
-webpack@^3.5.5:
-  version "3.5.5"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-3.5.5.tgz#3226f09fc8b3e435ff781e7af34f82b68b26996c"
+webpack@^3.5.6:
+  version "3.5.6"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-3.5.6.tgz#a492fb6c1ed7f573816f90e00c8fbb5a20cc5c36"
   dependencies:
     acorn "^5.0.0"
     acorn-dynamic-import "^2.0.0"
