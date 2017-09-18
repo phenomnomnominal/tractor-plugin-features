@@ -9,14 +9,12 @@ const STEP_DEFINITION_REGEX = /^\s*this\.(Given|Then|When)[\s\S]*\}\);$/m;
 const ARGUMENTS_REGEX = /[a-zA-Z]*="[^"]*"*/g;
 const ARGUMENT_NAME_REGEX = /([a-zA-Z]*)="([^"]*)"/
 
-// Utilities:
-import path from 'path';
-import Promise from 'bluebird';
-
 // Dependencies:
-const childProcess = Promise.promisifyAll(require('child_process'));
+import Promise from 'bluebird';
+import childProcess from 'child_process';
 import * as esprima from 'esprima';
 import estemplate from 'estemplate';
+import path from 'path';
 import stripcolorcodes from 'stripcolorcodes';
 import { StepDefinitionFile } from 'tractor-plugin-step-definitions';
 

@@ -1,13 +1,10 @@
 /* global describe:true, it:true */
 
-// Utilities:
-import path from 'path';
-import Promise from 'bluebird';
-
 // Test setup:
-import { dedent, expect, sinon } from '../../../test-setup';
+import { dedent, expect, Promise, sinon } from '../../../../test-setup';
 
 // Dependencies:
+import path from 'path';
 import childProcess from 'child_process';
 import { FileStructure } from 'tractor-file-structure';
 import { StepDefinitionFile } from 'tractor-plugin-step-definitions';
@@ -16,8 +13,8 @@ import { FeatureFile } from '../files/feature-file';
 // Under test:
 import { generate, setStepDefinitionsFileStructure } from './generate-step-definition-files';
 
-describe('server/utils: StepDefinitionGenerator:', () => {
-    describe('StepDefinitionGenerator.generate:', () => {
+describe('tractor-plugin-features - generate-step-definition-files:', () => {
+    describe('generate:', () => {
         it('should generate files for each step in a feature', () => {
             let stepDefinitionsFileStructure = new FileStructure(path.join(path.sep, 'step-definitions'));
 

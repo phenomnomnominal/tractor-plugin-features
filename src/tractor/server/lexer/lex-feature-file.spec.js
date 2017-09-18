@@ -1,7 +1,7 @@
 /* global describe:true, it:true */
 
 // Test setup:
-import { expect, sinon } from '../../../test-setup';
+import { expect, sinon } from '../../../../test-setup';
 
 // Dependencies:
 import gherkin from 'gherkin';
@@ -9,7 +9,7 @@ import gherkin from 'gherkin';
 // Under test:
 import { lex } from './lex-feature-file';
 
-describe('tractor-plugin-features: lex-feature-file:', () => {
+describe('tractor-plugin-features - lex-feature-file:', () => {
     it('should lex a feature file', () => {
         let enLexer = gherkin.Lexer('en');
         sinon.stub(enLexer.prototype, 'scan');

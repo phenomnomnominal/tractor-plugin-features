@@ -1,7 +1,7 @@
 // Dependencies:
 import { setStepDefinitionsFileStructure } from './generator/generate-step-definition-files';
 
-export default function run (
+export function run (
     featuresFileStructure,
     stepDefinitionsFileStructure
 ) {

@@ -1,11 +1,9 @@
 // Constants:
 const REQUEST_ERROR = 400;
 
-// Utilities:
+// Dependencies:
 import escapeRegExp from 'lodash.escaperegexp';
 import path from 'path';
-
-// Dependencies:
 import { File } from 'tractor-file-structure';
 import { generate } from '../generator/generate-step-definition-files';
 import { lex } from '../lexer/lex-feature-file';

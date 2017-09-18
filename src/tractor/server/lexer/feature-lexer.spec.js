@@ -1,12 +1,12 @@
 /* global describe:true, it:true */
 
 // Test setup:
-import { expect, dedent } from '../../../test-setup';
+import { expect, dedent } from '../../../../test-setup';
 
 // Under test:
 import { FeatureLexer } from './feature-lexer';
 
-describe('tractor-plugin-features: FeatureLexer:', () => {
+describe('tractor-plugin-features - feature-lexer:', () => {
     describe('FeatureLexer constructor:', () => {
         it('should return a FeatureLexer', () => {
             let lexer = new FeatureLexer();

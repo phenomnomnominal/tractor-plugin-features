@@ -4,20 +4,20 @@
 import { expect } from '../../test-setup';
 
 // Under test:
-import { getConfig } from './utilities';
+import { config } from './config';
 
-describe('tractor-plugin-features - utilities:', () => {
-    describe('getConfig', () => {
+describe('tractor-plugin-features - tractor/config:', () => {
+    describe('config', () => {
         it('should create the config object', () => {
             let featuresConfig = {};
             let tractorConfig = {
                 features: featuresConfig
             };
 
-            let config = getConfig(tractorConfig);
+            let processed = config(tractorConfig);
 
-            expect(config).to.equal(featuresConfig);
-            expect(config.directory).to.equal('./tractor/features');
+            expect(processed).to.equal(featuresConfig);
+            expect(processed.directory).to.equal('./tractor/features');
         });
 
         it('should allow for a custom directory to be set', () => {
@@ -27,9 +27,9 @@ describe('tractor-plugin-features - utilities:', () => {
                 }
             };
 
-            let config = getConfig(tractorConfig);
+            let processed = config(tractorConfig);
 
-            expect(config.directory).to.equal('./src');
+            expect(processed.directory).to.equal('./src');
         });
     });
 });

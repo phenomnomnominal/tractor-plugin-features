@@ -1,25 +1,21 @@
 /* global describe:true, it:true */
 
+// Test setup:
+import { expect, Promise, sinon } from '../../../../test-setup';
+
 // Constants:
 const REQUEST_ERROR = 400;
 
-// Utilities:
-import path from 'path';
-import Promise from 'bluebird';
-
-// Test setup:
-import { expect, sinon } from '../../../test-setup';
-
 // Dependencies:
+import path from 'path';
 import * as lexFeatureFile from '../lexer/lex-feature-file';
-// import * as generateStepDefinitionFiles from '../generator/generate-step-definition-files';
 import { TractorError } from 'tractor-error-handler';
 import { File, FileStructure } from 'tractor-file-structure';
 
 // Under test:
 import { FeatureFile } from './feature-file';
 
-describe('tractor-plugin-features: FeatureFile:', () => {
+describe('tractor-plugin-features - feature-file:', () => {
     describe('FeatureFile constructor:', () => {
         it('should create a new FeatureFile', () => {
             let fileStructure = new FileStructure(path.join(path.sep, 'file-structure'));
