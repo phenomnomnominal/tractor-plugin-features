@@ -36,6 +36,7 @@ function ScenarioParserService (
             }
 
             if (notStep) {
+                // eslint-disable-next-line no-console
                 console.log(stepDeclaration, index);
             }
         });
@@ -44,7 +45,7 @@ function ScenarioParserService (
             let notExample = false;
 
             try {
-                let parsedExample = ExampleParserService.parse(scenario, example);
+                let parsedExample = exampleParserService.parse(scenario, example);
                 assert(parsedExample);
                 scenario.examples.push(parsedExample);
 
@@ -53,12 +54,13 @@ function ScenarioParserService (
             }
 
             if (notExample) {
+                // eslint-disable-next-line no-console
                 console.log(example, index);
             }
         });
 
         return scenario;
     }
-};
+}
 
 FeaturesModule.service('scenarioParserService', ScenarioParserService);

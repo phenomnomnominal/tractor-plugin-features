@@ -3,3 +3,11 @@ tractor-features > div {
     height: 100%;
     width: 100%;
 }
+
+.file-tree__item--feature {
+    background-image: url('./feature.png');
+
+    &.dragover {
+        background-image: url('./move-feature-to-directory.png');
+    }
+}

@@ -18,6 +18,6 @@ function ExampleParserService (
 
         return example;
     }
-};
+}
 
 FeaturesModule.service('exampleParserService', ExampleParserService);

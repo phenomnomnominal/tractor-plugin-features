@@ -22,6 +22,6 @@ function ExampleNameValidator (
             }).length === variableNames.length;
         };
     }
-};
+}
 
 FeaturesModule.directive('exampleName', ExampleNameValidator);

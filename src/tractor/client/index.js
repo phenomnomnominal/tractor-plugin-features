@@ -12,8 +12,11 @@ var tractor = angular.module('tractor');
 tractor.requires.push(FeaturesModule.name);
 
 tractor.config((
+    redirectionServiceProvider,
     $stateProvider
 ) => {
+    redirectionServiceProvider.addFileType('.feature', 'features');
+
     $stateProvider
     .state('tractor.features', {
         url: 'features{file:TractorFile}',
@@ -31,7 +34,7 @@ tractor.config((
                     return null;
                 }
                 return featureFileStructureService.openItem(featureUrl)
-                .then(file => featureParserService.parse(file));
+                .then(featureFile => featureParserService.parse(featureFile));
             }
         }
     })

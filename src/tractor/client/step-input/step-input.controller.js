@@ -1,6 +1,3 @@
-// Utilities:
-import path from 'path';
-
 // Module:
 import { FeaturesModule } from '../features.module';
 
@@ -23,7 +20,7 @@ function StepInputController (
     });
 
     this.isOpen = false;
-};
+}
 
 StepInputController.prototype.handleSearch = function (searchKey) {
     if (searchKey) {

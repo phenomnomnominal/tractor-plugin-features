@@ -6,10 +6,10 @@
     <tractor-file-tree
         extension="{{ $ctrl.extension }}"
         file-structure="$ctrl.fileStructure"
-        type="{{ $ctrl.type }}"
         create="$ctrl.createDirectory"
         delete="$ctrl.delete"
-        move="$ctrl.move">
+        move="$ctrl.move"
+        file-style="$ctrl.fileStyle">
     </tractor-file-tree>
     <tractor-panel-handle panel-name="feature-file-tree"></tractor-panel-handle>
     <form class="file" name="$ctrl.fileEditor" novalidate
@@ -145,12 +145,6 @@
                                             example="something happens"
                                             available-step-definitions="$ctrl.availableStepDefinitions">
                                         </tractor-step-input>
-
-                                        <a
-                                            class="file-editor__list-item-reference"
-                                            title="See step details"
-                                            ui-sref="tractor.step-definitions({ file: $ctrl.findStep(stepDeclaration) })">
-                                        </a>
                                     </li>
                                 </ol>
 

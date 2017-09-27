@@ -1,3 +1,5 @@
+/* global Set:true */
+
 // Utilities:
 import flatten from 'lodash.flatten';
 
@@ -95,6 +97,6 @@ function createScenarioModelConstructor (
         lines = flatten(lines);
         return lines.join(FeatureNewLine);
     }
-};
+}
 
 FeaturesModule.factory('ScenarioModel', createScenarioModelConstructor);

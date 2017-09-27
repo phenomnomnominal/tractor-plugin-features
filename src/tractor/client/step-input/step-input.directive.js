@@ -65,6 +65,6 @@ function StepInputDirective () {
             }
         }
     }
-};
+}
 
 FeaturesModule.directive('tractorStepInput', StepInputDirective);

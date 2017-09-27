@@ -36,8 +36,10 @@ function FeatureParserService (
                     assert(parsedScenario);
                     feature.scenarios.push(parsedScenario);
                     return;
+                // eslint-disable-next-line no-empty
                 } catch (e) { }
 
+                // eslint-disable-next-line no-console
                 console.warn('Invalid Feature:', element, index);
             });
 
@@ -46,6 +48,6 @@ function FeatureParserService (
             return new FeatureModel();
         }
     }
-};
+}
 
 FeaturesModule.service('featureParserService', FeatureParserService);

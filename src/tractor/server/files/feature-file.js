@@ -18,6 +18,7 @@ export class FeatureFile extends File {
         let read = super.read();
 
         return read.then(content => setTokens(this, content))
+        .then(() => getReferences.call(this))
         .catch(() => {
             throw new TractorError(`Lexing "${this.path}" failed.`, REQUEST_ERROR);
         });
@@ -62,6 +63,21 @@ export class FeatureFile extends File {
         serialised.tokens = this.tokens;
         return serialised;
     }
+}
+
+function getReferences () {
+    if (this.initialised) {
+        this.clearReferences();
+    }
+
+    // TODO: Convert each step in feature to .step.js name and
+    // create the reference link:
+    // let reference = this.fileStructure.referenceManager.getReference(referencePath);
+    // if (reference) {
+    //     this.addReference(reference);
+    // }
+
+    this.initialised = true;
 }
 
 function refactorName (newFile, oldName, newName) {
