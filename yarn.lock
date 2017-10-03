@@ -4924,9 +4924,9 @@ tractor-logger@^0.1.1:
   dependencies:
     npmlog "^4.1.2"
 
-tractor-plugin-step-definitions@^0.2.7:
-  version "0.2.7"
-  resolved "https://registry.yarnpkg.com/tractor-plugin-step-definitions/-/tractor-plugin-step-definitions-0.2.7.tgz#9ccfc41c0fd3f6692bb837cd69dd27974f0577e6"
+tractor-plugin-step-definitions@^0.2.9:
+  version "0.2.9"
+  resolved "https://registry.yarnpkg.com/tractor-plugin-step-definitions/-/tractor-plugin-step-definitions-0.2.9.tgz#ab0aec6cb599f9db70151c298f8b21f02a860adb"
   dependencies:
     bluebird "^3.5.0"
     change-case "^3.0.1"
