@@ -24,9 +24,9 @@ function createFeatureModelConstructor (
                     return !!(options && options.isSaved);
                 }
             },
-            url: {
+            file: {
                 get () {
-                    return options && options.url;
+                    return options && options.file;
                 }
             },
             scenarios: {

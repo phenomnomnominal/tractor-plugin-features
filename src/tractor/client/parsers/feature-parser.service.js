@@ -18,7 +18,7 @@ function FeatureParserService (
         try {
             let feature = new FeatureModel({
                 isSaved: true,
-                url: featureFile.url
+                file: featureFile
             });
 
             let [featureTokens] = featureFile.tokens;
