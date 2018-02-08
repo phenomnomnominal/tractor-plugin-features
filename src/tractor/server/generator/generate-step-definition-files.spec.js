@@ -1,14 +1,18 @@
 /* global describe:true, it:true */
 
 // Test setup:
-import { dedent, expect, Promise, sinon } from '../../../../test-setup';
+import { expect, Promise, sinon } from '@tractor/unit-test';
+import dedent from 'dedent';
 
 // Dependencies:
+import { FileStructure } from '@tractor/file-structure';
+import { StepDefinitionFile } from '@tractor-plugins/step-definitions';
 import path from 'path';
 import childProcess from 'child_process';
-import { FileStructure } from 'tractor-file-structure';
-import { StepDefinitionFile } from 'tractor-plugin-step-definitions';
 import { FeatureFile } from '../files/feature-file';
+
+// Promisify:
+Promise.promisifyAll(require('child_process'));
 
 // Under test:
 import { generate, setStepDefinitionsFileStructure } from './generate-step-definition-files';

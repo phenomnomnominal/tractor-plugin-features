@@ -1,16 +1,16 @@
 /* global describe:true, it:true */
 
 // Test setup:
-import { expect, Promise, sinon } from '../../../../test-setup';
+import { expect, Promise, sinon } from '@tractor/unit-test';
 
 // Constants:
 const REQUEST_ERROR = 400;
 
 // Dependencies:
+import { TractorError } from '@tractor/error-handler';
+import { File, FileStructure } from '@tractor/file-structure';
 import path from 'path';
 import * as lexFeatureFile from '../lexer/lex-feature-file';
-import { TractorError } from 'tractor-error-handler';
-import { File, FileStructure } from 'tractor-file-structure';
 
 // Under test:
 import { FeatureFile } from './feature-file';

@@ -1,7 +1,8 @@
 /* global describe:true, it:true */
 
 // Test setup:
-import { expect, dedent } from '../../../../test-setup';
+import { expect } from '@tractor/unit-test';
+import dedent from 'dedent';
 
 // Under test:
 import { FeatureLexer } from './feature-lexer';

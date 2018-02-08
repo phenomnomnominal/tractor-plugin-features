@@ -2,14 +2,12 @@
 const REQUEST_ERROR = 400;
 
 // Dependencies:
+import { TractorError } from '@tractor/error-handler';
+import { File } from '@tractor/file-structure';
 import escapeRegExp from 'lodash.escaperegexp';
 import path from 'path';
-import { File } from 'tractor-file-structure';
 import { generate } from '../generator/generate-step-definition-files';
 import { lex } from '../lexer/lex-feature-file';
-
-// Errors:
-import { TractorError } from 'tractor-error-handler';
 
 export class FeatureFile extends File {
     read () {

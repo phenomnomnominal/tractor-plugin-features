@@ -1,6 +1,6 @@
 // Dependencies:
+import { FileStructure, serveFileStructure } from '@tractor/file-structure';
 import path from 'path';
-import { FileStructure, serveFileStructure } from 'tractor-file-structure';
 import { FeatureFile } from './files/feature-file';
 
 export function serve (config, di) {

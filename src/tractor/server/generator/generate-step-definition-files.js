@@ -10,13 +10,13 @@ const ARGUMENTS_REGEX = /[a-zA-Z]*="[^"]*"*/g;
 const ARGUMENT_NAME_REGEX = /([a-zA-Z]*)="([^"]*)"/
 
 // Dependencies:
+import { StepDefinitionFile } from '@tractor-plugins/step-definitions';
 import Promise from 'bluebird';
 import childProcess from 'child_process';
 import * as esprima from 'esprima';
 import estemplate from 'estemplate';
 import path from 'path';
 import stripcolorcodes from 'stripcolorcodes';
-import { StepDefinitionFile } from 'tractor-plugin-step-definitions';
 
 let stepDefinitionsFileStructure;
 export function setStepDefinitionsFileStructure (_stepDefinitionsFileStructure) {
