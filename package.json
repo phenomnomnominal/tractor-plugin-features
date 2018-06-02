@@ -62,7 +62,7 @@
     "@tractor-plugins/step-definitions": "^0.3.0",
     "esprima": "^4.0.0",
     "estemplate": "^0.5.1",
-    "gherkin": "2.12.2",
+    "gherkin": "5.1.0",
     "lodash.escaperegexp": "^4.1.2",
     "stripcolorcodes": "^0.1.0"
   },
